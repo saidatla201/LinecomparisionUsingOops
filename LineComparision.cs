@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace LineComparisionUsingOOps
 {
@@ -41,18 +42,18 @@ namespace LineComparisionUsingOOps
                 double lengthofsecondline = Math.Sqrt((x3 - x4) * (x3 - x4) + (y3 - y4) * (y3 - y4));
                 Console.WriteLine("Length of First line Co-ordinates" + lengthofsecondline);
 
-            //UC2 Equality Checks
-             if (lengthoffirstline == lengthofsecondline)
+            double outputvalue = lengthoffirstline.CompareTo(lengthofsecondline);
+            if (outputvalue > 0)
             {
-                Console.WriteLine("Length of two lines are  equal");
+                Console.WriteLine("Line 1 is greater than Line 2");
             }
-            else if (lengthoffirstline >= lengthofsecondline)
+            else if (outputvalue < 0)
             {
-                Console.WriteLine("Length of first line is greater than length of second line");
+                Console.WriteLine("Line 1 is less than Line 2");
             }
             else
             {
-                Console.WriteLine("Length offirst line is smaller than length of second line ");
+                Console.WriteLine("Line 1 is equal to Line 2");
             }
 
 
