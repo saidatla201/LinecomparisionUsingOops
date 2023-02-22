@@ -40,15 +40,19 @@ namespace LineComparisionUsingOOps
 
                 double lengthofsecondline = Math.Sqrt((x3 - x4) * (x3 - x4) + (y3 - y4) * (y3 - y4));
                 Console.WriteLine("Length of First line Co-ordinates" + lengthofsecondline);
-             
+
             //UC2 Equality Checks
-            if (lengthoffirstline == lengthofsecondline)
+             if (lengthoffirstline == lengthofsecondline)
             {
-                Console.WriteLine("Length between two lines are equal");
+                Console.WriteLine("Length of two lines are  equal");
+            }
+            else if (lengthoffirstline >= lengthofsecondline)
+            {
+                Console.WriteLine("Length of first line is greater than length of second line");
             }
             else
             {
-                Console.WriteLine("Length between two lines are not equal");
+                Console.WriteLine("Length offirst line is smaller than length of second line ");
             }
 
 
