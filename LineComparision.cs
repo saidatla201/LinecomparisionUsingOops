@@ -8,11 +8,11 @@ namespace LineComparisionUsingOOps
 {
     public class LineComparision
     {
-        public void Firstlines()
+        public void CoordinatesValues()
         {
             
             
-                // UC1 Comparision of first line Co-ordinates
+                //  Co-ordinates
                 Console.WriteLine("Enter the First line  Co-ordinates");
                 Console.WriteLine("Enter the X1 value");
                 double x1 = Convert.ToInt32(Console.ReadLine());
@@ -27,7 +27,32 @@ namespace LineComparisionUsingOOps
                 double lengthoffirstline = Math.Sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
                 Console.WriteLine("Length of First line Co-ordinates" + lengthoffirstline);
 
-            
+                Console.WriteLine("Enter the Second line  Co-ordinates");
+                Console.WriteLine("Enter the X3 value");
+                double x3 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter the X4 value");
+                double x4 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter the Y3 value");
+                double y3 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter the Y4 value");
+                double y4 = Convert.ToInt32(Console.ReadLine());
+
+
+                double lengthofsecondline = Math.Sqrt((x3 - x4) * (x3 - x4) + (y3 - y4) * (y3 - y4));
+                Console.WriteLine("Length of First line Co-ordinates" + lengthofsecondline);
+             
+            //UC2 Equality Checks
+            if (lengthoffirstline == lengthofsecondline)
+            {
+                Console.WriteLine("Length between two lines are equal");
+            }
+            else
+            {
+                Console.WriteLine("Length between two lines are not equal");
+            }
+
+
+
         }
     }
 }
